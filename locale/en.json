@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "ENVI Remote Sensing",
+    "description": "Operate ENVI from Harness through its task engine: 26 tools over 295 ENVI tasks, plus the envi skill, the /envi-check command and unattended batch processing."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "ENVI 遥感处理",
+    "description": "让 Harness 直接驱动 ENVI：26 个工具覆盖 295 个 ENVI 任务，附带 envi 技能、/envi-check 命令与无人值守批处理。"
+  }
+}

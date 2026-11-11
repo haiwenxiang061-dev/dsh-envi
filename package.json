@@ -1,0 +1,57 @@
+{
+  "name": "dsh-envi",
+  "version": "0.8.1",
+  "description": "Operate ENVI remote-sensing software from DeepSeek Harness: 26 tools over 295 ENVI task-engine tasks, plus the envi skill and /envi-check command.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "upstream",
+    "skills",
+    "commands",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "author": "haiwenxiang061-dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haiwenxiang061-dev/dsh-envi.git"
+  },
+  "homepage": "https://github.com/haiwenxiang061-dev/dsh-envi#readme",
+  "bugs": {
+    "url": "https://github.com/haiwenxiang061-dev/dsh-envi/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "harness",
+    "dsh",
+    "gis",
+    "geospatial",
+    "envi",
+    "remote-sensing",
+    "satellite-imagery",
+    "raster"
+  ]
+}

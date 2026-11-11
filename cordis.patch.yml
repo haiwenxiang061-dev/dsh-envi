@@ -1,0 +1,5 @@
+# dsh-envi bundle patch. Layered over dsh-base by the profile's bundle stack;
+# list position is the load order, so this single entry activates the plugin.
+- insert:
+    - id: envi
+      name: 'dsh-envi'

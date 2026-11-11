@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="ENVI remote sensing">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2f2a"/>
+      <stop offset="1" stop-color="#1c5c46"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee787" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#b7f7c1" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="94" height="94" rx="20" fill="url(#sky)"/>
+  <g fill="none" stroke="#2f7f5f" stroke-width="1">
+    <path d="M10 26 H86"/><path d="M10 40 H86"/><path d="M10 54 H86"/><path d="M10 68 H86"/><path d="M10 80 H86"/>
+    <path d="M22 14 V84"/><path d="M38 14 V84"/><path d="M54 14 V84"/><path d="M70 14 V84"/>
+  </g>
+  <g fill="#6ee7a8">
+    <rect x="23" y="27" width="14" height="12" opacity="0.35"/>
+    <rect x="39" y="55" width="14" height="12" opacity="0.55"/>
+    <rect x="55" y="41" width="14" height="12" opacity="0.45"/>
+    <rect x="55" y="69" width="14" height="10" opacity="0.3"/>
+    <rect x="39" y="27" width="14" height="12" opacity="0.75"/>
+    <rect x="71" y="55" width="14" height="12" opacity="0.5"/>
+  </g>
+  <path d="M10 74 L26 58 L42 68 L58 44 L74 54 L86 34" fill="none" stroke="#c8ffd8" stroke-width="1.8" opacity="0.55" stroke-linejoin="round"/>
+  <g>
+    <rect x="24" y="16" width="48" height="10" rx="5" fill="url(#scan)"/>
+  </g>
+  <g transform="translate(70 72) rotate(-32)">
+    <rect x="-7" y="-4" width="14" height="8" rx="1.6" fill="#ffffff"/>
+    <rect x="-14" y="-6" width="7" height="12" rx="1.6" fill="#9ff3b8"/>
+    <rect x="7" y="-6" width="7" height="12" rx="1.6" fill="#9ff3b8"/>
+    <path d="M-2 4 L0 9 L2 4" fill="#ffffff"/>
+  </g>
+</svg>
