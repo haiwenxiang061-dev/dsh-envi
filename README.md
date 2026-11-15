@@ -35,7 +35,7 @@ dsh-envi/
 
 ## 安装
 
-### 方式一：插件市场一键安装（推荐）
+### 方式一：从 npm 安装
 
 ```bash
 dsh plugin --profile web add dsh-envi
@@ -45,12 +45,16 @@ dsh plugin --profile desktop add dsh-envi
 `desktop` 是带窗口的桌面 profile，`web` 是浏览器 profile；把 profile 名换成你实际要装的那个。
 装完刷新页面即生效，插件出现在「设置 → 插件」里，行内标注 **ENVI 遥感处理**。
 
-从源码装（未发布 npm 的场景）：
+> 该包当前**尚未发布到 npm**，上面的命令会解析失败。现在要装请用方式二。
+
+### 方式二：从 GitHub 源码安装（现在可用）
 
 ```bash
 dsh plugin --profile web add github:haiwenxiang061-dev/dsh-envi
 dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-envi
 ```
+
+`dsh plugin` 会把参数转发给 profile 目录里的 pnpm，所以本机需要能调到 `pnpm`。
 
 ### 方式二：加进 profile 的 bundle 栈
 
