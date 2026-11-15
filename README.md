@@ -45,21 +45,21 @@ dsh plugin --profile desktop add dsh-envi
 `desktop` 是带窗口的桌面 profile，`web` 是浏览器 profile；把 profile 名换成你实际要装的那个。
 装完刷新页面即生效，插件出现在「设置 → 插件」里，行内标注 **ENVI 遥感处理**。
 
-npm 上已发布 `0.8.1`，用 `npm view dsh-envi version` 可查最新版。
+npm 上已发布 `0.8.2`，用 `npm view dsh-envi version` 可查最新版。
 
 ### 方式二：从 GitHub 安装（不走 npm 时用）
 
 钉住 tag 的 tarball 地址，下载后直接解包安装，不需要 git 传输：
 
 ```bash
-dsh plugin --profile web add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
-dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
+dsh plugin --profile web add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.2
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.2
 ```
 
 Release 里也挂了同一份 `.tgz` 附件，想用 GitHub 的下载页可以换成：
 
 ```bash
-dsh plugin --profile desktop add https://github.com/haiwenxiang061-dev/dsh-envi/releases/download/v0.8.1/dsh-envi-0.8.1.tgz
+dsh plugin --profile desktop add https://github.com/haiwenxiang061-dev/dsh-envi/releases/download/v0.8.2/dsh-envi-0.8.2.tgz
 ```
 
 两点实测注意：

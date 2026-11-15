@@ -1,6 +1,6 @@
 {
   "name": "dsh-envi",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Operate ENVI remote-sensing software from DeepSeek Harness: 26 tools over 295 ENVI task-engine tasks, plus the envi skill and /envi-check command.",
   "type": "module",
   "main": "index.js",
