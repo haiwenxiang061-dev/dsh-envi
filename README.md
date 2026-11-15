@@ -47,16 +47,26 @@ dsh plugin --profile desktop add dsh-envi
 
 > 该包当前**尚未发布到 npm**，上面的命令会解析失败。现在要装请用方式二。
 
-### 方式二：从 GitHub 源码安装（现在可用）
+### 方式二：从 GitHub 安装（现在可用）
+
+钉住 tag 的 tarball 地址，下载后直接解包安装，不需要 git 传输：
 
 ```bash
-dsh plugin --profile web add github:haiwenxiang061-dev/dsh-envi
-dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-envi
+dsh plugin --profile web add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
+dsh plugin --profile desktop add https://codeload.github.com/haiwenxiang061-dev/dsh-envi/tar.gz/refs/tags/v0.8.1
 ```
 
-`dsh plugin` 会把参数转发给 profile 目录里的 pnpm，所以本机需要能调到 `pnpm`。
+Release 里也挂了同一份 `.tgz` 附件，想用 GitHub 的下载页可以换成：
 
-### 方式二：加进 profile 的 bundle 栈
+```bash
+dsh plugin --profile desktop add https://github.com/haiwenxiang061-dev/dsh-envi/releases/download/v0.8.1/dsh-envi-0.8.1.tgz
+```
+
+两点实测注意：
+- `dsh plugin` 会把参数转发给 profile 目录里的 pnpm，所以本机需要能调到 `pnpm`（`npm i -g pnpm` 即可）。
+- 不建议用 `github:haiwenxiang061-dev/dsh-envi` 这种简写：它走 git 传输协议，在国内网络下经常被 reset；上面的 codeload 地址走 HTTPS 下载，稳定得多。
+
+### 方式三：加进 profile 的 bundle 栈
 
 在 `$DSH_HOME/profiles/<profile>/package.json` 里加依赖和 bundle 条目：
 
@@ -76,7 +86,7 @@ dsh plugin --profile desktop add github:haiwenxiang061-dev/dsh-envi
 然后把包链接进 profile 的 `node_modules`（或在 profile 目录跑 `pnpm install`），重启 Harness。
 `bundles` 数组末尾的条目最后加载，`envi` 条目由 `cordis.patch.yml` 自动插入。
 
-### 方式三：patch overlay
+### 方式四：patch overlay
 
 不改 profile 的 bundle 栈，直接插一条：
 
